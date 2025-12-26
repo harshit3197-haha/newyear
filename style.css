@@ -1,0 +1,610 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.container {
+  text-align: center;
+}
+
+/* Countdown timer */
+.timer {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BIG CLOCK */
+.time-box span {
+  font-size: 120px;
+  font-weight: 800;
+  color: #000;
+  letter-spacing: 2px;
+}
+
+.time-box p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Heading */
+h1 {
+  font-size: 48px;
+  margin: 20px 0;
+  color: #000;
+}
+
+/* Love pink button */
+.next-btn {
+  padding: 16px 50px;
+  font-size: 18px;
+  background: linear-gradient(135deg, #ff7eb3, #ff4d88);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 10px 30px rgba(255, 77, 136, 0.4);
+}
+
+.next-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 40px rgba(255, 77, 136, 0.6);
+}
+
+/* Bottom right gif */
+.gif {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+}
+.colon {
+  font-size: 100px;
+  font-weight: 700;
+  color: black;
+  line-height: 1;
+  margin-top: 20px;
+}
+/* PAGE 2 */
+.page2-container {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image animation */
+.love-img {
+  width: 300px;
+  animation: enter 1.3s ease-out forwards;
+}
+
+@keyframes enter {
+  from {
+    transform: translate(-200px, -200px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+/* Text */
+.love-text {
+  font-size: 50px;
+  color: #ff77aa;
+  margin-top: 20px;
+}
+
+.love-sub {
+  font-size: 36px;
+  color: #ff99bb;
+  margin-bottom: 40px;
+}
+
+/* Nav buttons */
+.nav-buttons {
+  display: flex;
+  gap: 40px;
+}
+
+/* HOW DARE YOU PAGE */
+.dare-container {
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dare-text {
+  font-size: 64px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.dare-img {
+  width: 600px;   /* BIG dramatic image */
+  max-width: 90%;
+  margin-bottom: 40px;
+}
+/* READY PAGE */
+.ready-container {
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ready-text {
+  font-size: 50px;
+  color: #ff77aa;
+  margin-bottom: 20px;
+}
+
+.ready-img {
+  width: 420px;
+  max-width: 90%;
+  margin-bottom: 40px;
+}
+
+/* FIREWORK PAGE */
+.firework-page {
+  height: 100vh;
+  width: 100%;
+  background: black;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* Dark overlay */
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.overlay h2 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+/* Glass Next Button */
+.glass-btn {
+  padding: 15px 60px;
+  font-size: 18px;
+  color: white;
+  background: rgba(255,255,255,0.25);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.glass-btn:hover {
+  background: rgba(255,255,255,0.4);
+}
+#fireworks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.overlay h1 {
+  font-size: 60px;
+  color: white;
+  text-shadow: 0 0 20px rgba(255,255,255,0.8);
+}
+
+.overlay h2 {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 50px;
+  text-shadow: 0 0 20px rgba(255,200,200,0.8);
+}
+.glass-btn {
+  padding: 15px 60px;
+  font-size: 18px;
+  color: white;
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(255,255,255,0.4);
+  transition: 0.3s;
+}
+
+.glass-btn:hover {
+  box-shadow: 0 0 50px rgba(255,255,255,0.8);
+  transform: scale(1.05);
+}
+/* GIFTS PAGE */
+/* GIFTS PAGE */
+body {
+  margin: 0;
+  background: #ffe6f0; /* FULL page light pink */
+}
+
+.gifts-container {
+  min-height: 100vh;
+  width: 100vw;
+  background: #ffe6f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.gifts-title {
+  font-size: 60px;
+  color: #ff4d88;
+  margin: 40px 0;
+}
+
+
+.gifts-grid {
+  width: 80%;
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px 120px;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+/* Floating gift images */
+.gift {
+  width: 280px;
+  height: auto;
+  cursor: pointer;
+  animation: floatSpace 3s ease-in-out infinite;
+
+  transition: 0.4s;
+}
+
+.gift:hover {
+  transform: scale(1.15);
+}
+@keyframes floatSpace {
+  0% {
+    transform: translateY(0px) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(-2deg);
+  }
+}
+
+/* LOVE LETTER PAGE */
+.letter-page {
+  background: #f3efe9;
+}
+
+.paper {
+  width: 90%;
+  max-width: 1200px;
+  background: #fffdf8;
+  padding: 60px;
+  display: flex;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  border-radius: 12px;
+}
+
+
+/* LEFT SIDE TEXT */
+.left-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.small-line {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.left-text h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  font-family: "Times New Roman", serif;
+  margin-bottom: 30px;
+}
+
+.paragraph {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.signature {
+  font-size: 24px;
+  color: #ff4d88;
+}
+
+/* RIGHT SIDE */
+.right-photo {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: flex-end
+}
+
+.photo-frame {
+  position: relative;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.photo-frame {
+  background: white;
+  padding: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+  border-radius: 6px;
+}
+.photo-frame img {
+  width: 280px;      /* perfect medium size */
+  max-width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+
+/* Pinned mini photo */
+.photo-frame::after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: -35px;
+  width: 160px;
+  height: 110px;
+  background: url("smallphoto.jpg") center/cover no-repeat;
+  border: 8px solid white;
+  transform: rotate(8deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  
+}
+
+
+
+/* Back button */
+.back-btn {
+  margin-top: 20px;
+  padding: 12px 40px;
+  background: #ffb6cc;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Hello Kitty */
+.kitty {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 140px;
+  z-index: 10;        /* bring in front */
+  pointer-events: none;
+}
+
+
+
+.fade {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.delay1 { animation-delay: 0.5s; }
+.delay2 { animation-delay: 1.5s; }
+.delay3 { animation-delay: 2.5s; }
+.delay4 { animation-delay: 3.5s; }
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+.bottom-back {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.back-btn {
+  background: #ffb6cc;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 18px;
+  padding: 12px 45px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 182, 204, 0.7);
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px rgba(255, 182, 204, 0.6);
+  }
+  to {
+    box-shadow: 0 0 25px rgba(255, 182, 204, 1);
+  }
+}
+/* BOUQUET PAGE */
+.bouquet-page {
+  min-height: 100vh;
+  background: #fff6fb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+/* Left text */
+.bouquet-left {
+  width: 50%;
+}
+
+.bouquet-text {
+  font-size: 28px;
+  color: #ff77aa;
+  line-height: 1.6;
+  font-family: "Comic Sans MS", "Segoe UI", cursive;
+}
+
+/* Right image */
+.bouquet-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.bouquet-img {
+  width: 420px;
+  max-width: 100%;
+}
+
+/* Back button bottom-right */
+.bouquet-back {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+/* ===== GIFT 3 VIDEO PAGE ===== */
+.video-page {
+  min-height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Glass video card */
+.video-card {
+  width: 90%;
+  max-width: 400px;   /* portrait friendly */
+  aspect-ratio: 9 / 16;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  box-shadow: 0 0 50px rgba(255, 77, 136, 0.6);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Video inside card */
+.video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Back button bottom */
+.video-back {
+  position: absolute;
+  bottom: 30px;
+}
+/* FORCE full black background for Gift-3 */
+.video-page {
+  background: #000 !important;
+}
+
+.video-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: -1;
+}
+
+body:has(.video-page) {
+  background: #000 !important;
+}
+
+/* MUSIC PAGE */
+.music-page {
+  min-height: 100vh;
+  background: #ffe6f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-title {
+  font-size: 48px;
+  color: #ff4d88;
+  margin-bottom: 30px;
+}
+
+.music-player {
+  width: 350px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 25px rgba(255,77,136,0.6);
+  border-radius: 20px;
+}
+
+.music-text {
+  font-size: 24px;
+  color: #ff77aa;
+  text-align: center;
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+/* Back button bottom */
+.music-back {
+  position: absolute;
+  bottom: 40px;
+}

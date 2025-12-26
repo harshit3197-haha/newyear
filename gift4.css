@@ -1,0 +1,97 @@
+#tapScreen{
+  position:fixed;
+  inset:0;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:28px;
+  color:white;
+  z-index:999;
+}
+body{
+  margin:0;
+  background:black;
+  color:white;
+  font-family:sans-serif;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* Player */
+.player{
+  width:90%;
+  background:linear-gradient(135deg,#a33,#711);
+  margin:20px;
+  padding:15px;
+  border-radius:15px;
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+.cover{
+  width:60px;
+  border-radius:8px;
+}
+.song-info{
+  flex:1;
+}
+.song-info span{
+  font-size:12px;
+  opacity:.7;
+}
+#play{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  border:none;
+  background:white;
+  font-size:20px;
+}
+
+/* CD */
+.cd-box{
+  width:90vw;
+  max-width:350px;
+  height:350px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:40px;
+}
+
+.cd{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background:#111;
+  border:6px solid #555;
+  position:relative;
+  animation:spin 10s linear infinite;
+}
+
+.cd img{
+  width:70px;
+  border-radius:10px;
+  position:absolute;
+}
+
+.p1{top:20px; left:120px;}
+.p2{bottom:30px; left:40px;}
+.p3{right:30px; top:120px;}
+
+.quote{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  font-size:14px;
+  width:70%;
+}
+
+@keyframes spin{
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
