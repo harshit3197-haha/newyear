@@ -555,6 +555,64 @@ body {
   position: absolute;
   bottom: 30px;
 }
+.glass-next {
+  position: absolute;
+  bottom: 90px;
+  padding: 14px 60px;
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  font-size: 18px;
+}
+/* BLACK CINEMA PAGE */
+.black-page {
+  min-height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-love-text {
+  color: white;
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 30px;
+  max-width: 90%;
+}
+
+/* Photo grid */
+.photos-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 40px;
+}
+
+.photo-box {
+  text-align: center;
+}
+
+.photo-box p {
+  color: #ff7eb3;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.photo-box img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255,120,180,0.6);
+}
+.gallery-back {
+  grid-column: 1 / -1;   /* spans both columns */
+  margin-top: 30px;
+  justify-self: center;
+}
 /* FORCE full black background for Gift-3 */
 .video-page {
   background: #000 !important;
@@ -608,3 +666,4 @@ body:has(.video-page) {
   position: absolute;
   bottom: 40px;
 }
+
